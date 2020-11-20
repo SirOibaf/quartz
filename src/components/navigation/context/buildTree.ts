@@ -7,6 +7,7 @@ const buildTree = (children: ReactElement<NavigationItemProps>): TreeNode[] => {
     return React.Children.map(
       children,
       (child: ReactElement<NavigationItemProps>) => ({
+        id: child.props.id,
         title: child.props.title,
         children:
           child.props.children &&
