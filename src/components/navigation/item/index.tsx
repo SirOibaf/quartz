@@ -33,6 +33,7 @@ const NavigationItem: FC<NavigationItemProps> = (
   const {
     // @ts-ignore
     [trackBy]: key,
+    id,
     icon,
     title,
     isActive,
